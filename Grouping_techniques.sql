@@ -176,15 +176,18 @@ UNION ALL
 SELECT  category FROM public.products;
 		
 		/****** INTERSECT ******/
+/* List the customers who have placed orders. */
 SELECT customer_id FROM public.customers
 INTERSECT 
 SELECT customer_id FROM public.orders;
 		
 		/****** EXCEPT ******/
+/* List the customers who have not placed any orders. */
 SELECT customer_id FROM public.customers
 EXCEPT 
 SELECT customer_id FROM public.orders
 ---
-ROUND(),TYPE-CASTING
+--Examples for ROUND() & TYPE-CASTING
 select round(unit_price::numeric,1) from products;
-select 0.23456::text
+select 0.23456::text -- Invalid
+select 1.23 :: int -- valid
