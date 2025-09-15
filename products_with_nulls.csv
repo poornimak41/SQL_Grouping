@@ -1,0 +1,6 @@
+product_id,product_name,category,unit_price
+1,Laptop,Electronics,1000
+2,Phone,,500
+3,Tablet,Electronics,300
+4,Monitor,Electronics,200
+5,Keyboard,Accessories,50
