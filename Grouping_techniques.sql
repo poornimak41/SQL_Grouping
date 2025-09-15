@@ -31,9 +31,9 @@ SELECT * FROM public.order_details;
 
 /*********************************************************************/
 	/***** AGGREGATE FUNCTIONS ********/
-
+/*How many customers are there in the dataset? */
 SELECT COUNT(customer_id) FROM public.customers;
-
+/*What is the minimum unit price in the ELectronics category? */
 SELECT MIN(unit_price) FROM public.products 
 WHERE category = 'Electronics';
 
